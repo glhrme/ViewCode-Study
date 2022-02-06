@@ -9,7 +9,7 @@ import UIKit
 
 final class LoginViewScreen: BaseUIView {
     
-    var button: UIButton = {
+    var submitButton: UIButton = {
         let view = UIButton(frame: .zero)
         view.backgroundColor = .red
         view.setTitle("Fetch", for: .normal)
@@ -17,12 +17,17 @@ final class LoginViewScreen: BaseUIView {
         return view
     }()
     
-    var button2: UIButton = {
+    var cancelButton: UIButton = {
         let view = UIButton(frame: .zero)
         view.backgroundColor = .blue
         view.setTitle("2", for: .normal)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
+    }()
+    
+    var textView: UITextView = {
+        var text = UITextView(frame: .zero)
+        return text
     }()
     
     var stack: UIStackView = {
@@ -43,8 +48,9 @@ final class LoginViewScreen: BaseUIView {
 extension LoginViewScreen: CodeView {
     func buildViewHierrachy() {
         addSubview(stack)
-        stack.addArrangedSubview(button)
-        stack.addArrangedSubview(button2)
+        stack.addArrangedSubview(submitButton)
+        stack.addArrangedSubview(cancelButton)
+        stack.addArrangedSubview(textView)
     }
     
     func setupConstraints() {
