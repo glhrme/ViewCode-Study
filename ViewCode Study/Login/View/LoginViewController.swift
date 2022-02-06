@@ -8,9 +8,7 @@
 import UIKit
 
 class LoginViewController: BaseViewController<LoginViewScreen> {
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
-
