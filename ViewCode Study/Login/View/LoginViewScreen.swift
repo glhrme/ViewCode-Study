@@ -9,34 +9,18 @@ import UIKit
 
 final class LoginViewScreen: BaseUIView {
     
+    var baseView: UIView = {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = UIColor(named: "baseWhiteColor")
+        return view
+    }()
+    
     var submitButton: UIButton = {
         let view = UIButton(frame: .zero)
         view.backgroundColor = .red
         view.setTitle("Fetch", for: .normal)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
-    }()
-    
-    var cancelButton: UIButton = {
-        let view = UIButton(frame: .zero)
-        view.backgroundColor = .blue
-        view.setTitle("2", for: .normal)
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    
-    var textView: UITextView = {
-        var text = UITextView(frame: .zero)
-        return text
-    }()
-    
-    var stack: UIStackView = {
-        let stack = UIStackView()
-        stack.backgroundColor = .yellow
-        stack.distribution = .fillEqually
-        stack.spacing = 20
-        stack.axis = .vertical
-        return stack
     }()
     
     init() {
@@ -47,22 +31,26 @@ final class LoginViewScreen: BaseUIView {
 
 extension LoginViewScreen: CodeView {
     func buildViewHierrachy() {
-        addSubview(stack)
-        stack.addArrangedSubview(submitButton)
-        stack.addArrangedSubview(cancelButton)
-        stack.addArrangedSubview(textView)
+        self.backgroundColor = .yellow
+        addSubview(baseView)
+        baseView.addSubview(submitButton)
     }
     
     func setupConstraints() {
-        stack.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(0)
-            make.bottom.equalToSuperview().offset(0)
-            make.right.equalToSuperview().offset(-16)
+        baseView.snp.makeConstraints { make in
+            make.top.greaterThanOrEqualToSuperview().inset(16)
+            make.bottom.greaterThanOrEqualToSuperview().inset(16)
             make.left.equalToSuperview().offset(16)
+            make.right.equalToSuperview().offset(-16)
+        }
+        submitButton.snp.makeConstraints { make in
+            make.bottom.equalToSuperview().inset(16)
+            make.right.equalToSuperview().inset(16)
+            make.left.equalToSuperview().inset(16)
         }
     }
     
     func setupAdditionalConfiguration() {
-        backgroundColor = .darkGray
+        
     }
 }
