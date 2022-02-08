@@ -6,6 +6,6 @@ target 'ViewCode Study' do
   use_frameworks!
 
   # Pods for ViewCode Study
-  pod 'SnapKit'
+  
 
 end

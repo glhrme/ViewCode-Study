@@ -17,6 +17,7 @@
 		116C7D1927ACBCC400385556 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116C7D1827ACBCC400385556 /* CodeView.swift */; };
 		11D271C327B03BD400A10821 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D271C227B03BD300A10821 /* BaseUIView.swift */; };
 		11D271C527B048A700A10821 /* LoginViewController+SetupExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D271C427B048A700A10821 /* LoginViewController+SetupExtensions.swift */; };
+		E9FDDD59A3240B217BB9B15F /* Pods_ViewCode_Study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE24FF660D1D61870E1F7E7 /* Pods_ViewCode_Study.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9FDDD59A3240B217BB9B15F /* Pods_ViewCode_Study.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +154,6 @@
 				116C7CF327ACB60100385556 /* Sources */,
 				116C7CF427ACB60100385556 /* Frameworks */,
 				116C7CF527ACB60100385556 /* Resources */,
-				0A2535D181A431654BB1FD93 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,23 +210,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A2535D181A431654BB1FD93 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ViewCode Study/Pods-ViewCode Study-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ViewCode Study/Pods-ViewCode Study-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViewCode Study/Pods-ViewCode Study-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		676330180DE4D85166EA4F8B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,7 +396,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,7 +426,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

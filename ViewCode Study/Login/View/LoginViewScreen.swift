@@ -37,17 +37,7 @@ extension LoginViewScreen: CodeView {
     }
     
     func setupConstraints() {
-        baseView.snp.makeConstraints { make in
-            make.top.greaterThanOrEqualToSuperview().inset(16)
-            make.bottom.greaterThanOrEqualToSuperview().inset(16)
-            make.left.equalToSuperview().offset(16)
-            make.right.equalToSuperview().offset(-16)
-        }
-        submitButton.snp.makeConstraints { make in
-            make.bottom.equalToSuperview().inset(16)
-            make.right.equalToSuperview().inset(16)
-            make.left.equalToSuperview().inset(16)
-        }
+
     }
     
     func setupAdditionalConfiguration() {
