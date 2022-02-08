@@ -8,21 +8,6 @@
 import UIKit
 
 final class LoginViewScreen: BaseUIView {
-    
-    var baseView: UIView = {
-        let view = UIView(frame: .zero)
-        view.backgroundColor = UIColor(named: "baseWhiteColor")
-        return view
-    }()
-    
-    var submitButton: UIButton = {
-        let view = UIButton(frame: .zero)
-        view.backgroundColor = .red
-        view.setTitle("Fetch", for: .normal)
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    
     init() {
         super.init(frame: .zero)
         self.setupView()
@@ -30,16 +15,18 @@ final class LoginViewScreen: BaseUIView {
 }
 
 extension LoginViewScreen: CodeView {
+    
+    //MARK: - Primeira etapa da construção da UI
     func buildViewHierrachy() {
-        self.backgroundColor = .yellow
-        addSubview(baseView)
-        baseView.addSubview(submitButton)
+        self.backgroundColor = .red
     }
     
+    //MARK: - Segunda etapa da construção da UI
     func setupConstraints() {
 
     }
     
+    //MARK: - Última etapa da construção da UI
     func setupAdditionalConfiguration() {
         
     }
