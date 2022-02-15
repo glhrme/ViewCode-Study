@@ -7,14 +7,15 @@
 
 import UIKit
 
-final class LoginViewScreen: BaseUIView {
+final class HomeViewScreen: BaseUIView {
     init() {
         super.init(frame: .zero)
         self.setupView()
+        self.backgroundColor = .red
     }
 }
 
-extension LoginViewScreen: CodeView {
+extension HomeViewScreen: CodeView {
     
     //MARK: - Primeira etapa da construção da UI
     func buildViewHierrachy() {

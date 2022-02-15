@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: BaseViewController<LoginViewScreen> {
+class HomeViewController: BaseViewController<HomeViewScreen> {
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -7,17 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1161A19627BB25EC00020489 /* Pods_ViewCode_Study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE24FF660D1D61870E1F7E7 /* Pods_ViewCode_Study.framework */; };
+		1161A19727BB25EC00020489 /* Pods_ViewCode_Study.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE24FF660D1D61870E1F7E7 /* Pods_ViewCode_Study.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		116C7CFB27ACB60100385556 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116C7CFA27ACB60100385556 /* AppDelegate.swift */; };
 		116C7CFD27ACB60100385556 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116C7CFC27ACB60100385556 /* SceneDelegate.swift */; };
 		116C7CFF27ACB60100385556 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116C7CFE27ACB60100385556 /* LoginViewController.swift */; };
 		116C7D0427ACB60300385556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116C7D0327ACB60300385556 /* Assets.xcassets */; };
 		116C7D0727ACB60300385556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116C7D0527ACB60300385556 /* LaunchScreen.storyboard */; };
 		116C7D1527ACBB1F00385556 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116C7D1427ACBB1F00385556 /* BaseViewController.swift */; };
-		116C7D1727ACBBC000385556 /* LoginViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116C7D1627ACBBC000385556 /* LoginViewScreen.swift */; };
+		116C7D1727ACBBC000385556 /* HomeViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116C7D1627ACBBC000385556 /* HomeViewScreen.swift */; };
 		116C7D1927ACBCC400385556 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116C7D1827ACBCC400385556 /* CodeView.swift */; };
 		11D271C327B03BD400A10821 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D271C227B03BD300A10821 /* BaseUIView.swift */; };
-		E9FDDD59A3240B217BB9B15F /* Pods_ViewCode_Study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE24FF660D1D61870E1F7E7 /* Pods_ViewCode_Study.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1161A19827BB25EC00020489 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1161A19727BB25EC00020489 /* Pods_ViewCode_Study.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		116C7CF727ACB60100385556 /* ViewCode Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViewCode Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,7 +43,7 @@
 		116C7D0627ACB60300385556 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		116C7D0827ACB60300385556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		116C7D1427ACBB1F00385556 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		116C7D1627ACBBC000385556 /* LoginViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewScreen.swift; sourceTree = "<group>"; };
+		116C7D1627ACBBC000385556 /* HomeViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewScreen.swift; sourceTree = "<group>"; };
 		116C7D1827ACBCC400385556 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		11D271C227B03BD300A10821 /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
 		3DE24FF660D1D61870E1F7E7 /* Pods_ViewCode_Study.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewCode_Study.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,13 +56,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9FDDD59A3240B217BB9B15F /* Pods_ViewCode_Study.framework in Frameworks */,
+				1161A19627BB25EC00020489 /* Pods_ViewCode_Study.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1161A19927BB263C00020489 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				116C7D1127ACBACC00385556 /* Home */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		116C7CEE27ACB60100385556 = {
 			isa = PBXGroup;
 			children = (
@@ -69,10 +92,9 @@
 		116C7CF927ACB60100385556 /* ViewCode Study */ = {
 			isa = PBXGroup;
 			children = (
+				1161A19927BB263C00020489 /* Application */,
 				116C7D0F27ACBAA700385556 /* AppData */,
 				116C7D1327ACBB0000385556 /* BaseApp */,
-				116C7D1027ACBAC300385556 /* Components */,
-				116C7D1127ACBACC00385556 /* Login */,
 				116C7D0327ACB60300385556 /* Assets.xcassets */,
 				116C7D0527ACB60300385556 /* LaunchScreen.storyboard */,
 				116C7D0827ACB60300385556 /* Info.plist */,
@@ -89,26 +111,19 @@
 			path = AppData;
 			sourceTree = "<group>";
 		};
-		116C7D1027ACBAC300385556 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		116C7D1127ACBACC00385556 /* Login */ = {
+		116C7D1127ACBACC00385556 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				116C7D1227ACBAD400385556 /* View */,
 			);
-			path = Login;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		116C7D1227ACBAD400385556 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				116C7CFE27ACB60100385556 /* LoginViewController.swift */,
-				116C7D1627ACBBC000385556 /* LoginViewScreen.swift */,
+				116C7D1627ACBBC000385556 /* HomeViewScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -151,6 +166,7 @@
 				116C7CF327ACB60100385556 /* Sources */,
 				116C7CF427ACB60100385556 /* Frameworks */,
 				116C7CF527ACB60100385556 /* Resources */,
+				1161A19827BB25EC00020489 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,7 +257,7 @@
 				11D271C327B03BD400A10821 /* BaseUIView.swift in Sources */,
 				116C7CFB27ACB60100385556 /* AppDelegate.swift in Sources */,
 				116C7D1927ACBCC400385556 /* CodeView.swift in Sources */,
-				116C7D1727ACBBC000385556 /* LoginViewScreen.swift in Sources */,
+				116C7D1727ACBBC000385556 /* HomeViewScreen.swift in Sources */,
 				116C7CFD27ACB60100385556 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +334,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -373,6 +390,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
